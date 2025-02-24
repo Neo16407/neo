@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KỶ NIỆM NGÀY 26/3 - NGÀY THÀNH LẬP ĐOÀN TNCS HỒ CHÍ MINH</title>
+    <link rel="stylesheet" href="animate.css"/>
+</head>
+<style type="text/css">
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+    header {
+background-color: #e1f4f5;
+color: black;
+border-radius: 20px;
+display: flex;
+align-items: center; /* Căn giữa theo chiều dọc */
+padding: 10px 20px;
+
+}
+footer {
+background-color: #b7e7e4;
+color: white;
+text-align: center;
+padding: 10px;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'popping', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+   .sidebar {
+    height: 100%;
+    position: fixed;
+    right: -250px;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    padding: 15px;
+     width: 200px;
+     top: 0;
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-smooth:always;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+    right: 100px;
+
+
+}
+
+.toggle-btn {
+    background-color:#888787;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 70px;
+
+}
+.logo { 
+   width: 100;
+   }
+}
+@media (min-width: 900px) {
+    .sidebar {
+        right: 15; 
+    }
+
+    .main-content {
+        margin-right: 250px; 
+    }
+
+    .toggle-btn {
+        display: initial;
+
+    }
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: 0.75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s cubic-bezier(.28, -0.03, 0, 0.99);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icons {
+    background: #223;
+    color: white;
+    display: flex;
+    border-radius: 50%;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"]{
+    background-image: url('https://i.pinimg.com/736x/5c/80/b1/5c80b174187b480158808caaf5d3b88d.jpg');
+}
+.card[for="c2"]{
+    background-image: url('https://i.pinimg.com/736x/8b/1a/68/8b1a68ec00bec76aa12842420b060e4b.jpg');
+}
+.card[for="c3"]{
+    background-image: url('https://i.pinimg.com/736x/0a/f4/f6/0af4f61e824dd9ebf1360ffa0162c5dd.jpg');
+}
+.card[for="c4"]{
+    background-image: url('https://i.pinimg.com/736x/c8/34/37/c83437e6aa9de14aae96a781b09737e5.jpg');
+}
+video {
+   width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.logo { 
+   width: 100;
+   }
+</style>
+<body>
+    <header>
+        <div id="sidebar" class="sidebar">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <br>
+        <br>
+        <br>
+        <h2>Mục lục</h2>
+        <hr>
+        <ul>
+            <li><a href="baotuong.html">Trang chủ</a></li>
+            <hr>
+            <li><a href="26-3.html">26/3 là ngày gì?</a></li>
+            <hr>
+            <li><a href="neo.html">Ảnh và video</a></li>
+            <hr>
+            <li><a href="bl.html">Bình luận</a></li>
+            <hr>
+            <li><a href="ds.html">Danh sách thành viên</a></li>
+            <hr>
+        </ul>
+    </div>
+    <div id="main-content" class="main-content">
+        <button id="toggle-btn" class="toggle-btn">☰</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script type="text/javascript">document.getElementById('toggle-btn').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    const isVisible = sidebar.style.right === '0px';
+
+    sidebar.style.right = isVisible ? '-250px' : '0px';
+});</script>
+<div class="logo">
+            <img src="https://i.pinimg.com/236x/fd/4b/09/fd4b0962d80451a0fa980fd3c6ffd433.jpg" alt="Logo của tôi" width="150">
+        </div>
+<h1 id="font-color"> KỶ NIỆM NGÀY 26/3 – NGÀY THÀNH LẬP ĐOÀN TNCS HỒ CHÍ MINH </h1>
+<script>
+var colors = ["#864d82", "#864d4d", "#4d7e86", "#514d86", "#4d8657"];
+var currentColor = 0;
+setInterval(function() {
+document.getElementById("font-color").style.color = colors[currentColor];
+currentColor = (currentColor + 1) % colors.length;
+}, 1000);
+</script>
+</header>
+<ol>
+    <li> Ảnh </li>
+    <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icons">1</div>
+                    <div class="description">
+                        <h4>Ảnh 1</h4>
+                        <p>Nội dung 1</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2" checked>
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icons">2</div>
+                    <div class="description">
+                        <h4> ảnh 2</h4>
+                        <p> nội dung ảnh 2 </p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3" checked>
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icons">3</div>
+                    <div class="description">
+                        <h4> ảnh 3</h4>
+                        <p> nội dung ảnh 3 </p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4" checked>
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icons">4</div>
+                    <div class="description">
+                        <h4> ảnh 4</h4>
+                        <p> nội dung ảnh 4 </p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    <li> Video </li>
+    <br>
+    <br>
+     <video width="600" controls>
+    <source src="test.mp4" type="video/mp4">
+    
+    Your browser does not support the video tag.
+</video>
+    <script>
+    <div>const carouselContainer = document.querySelector('.carousel-container');
+const cards = document.querySelectorAll('.card');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    const offset = -currentIndex * 100; // Move the carousel based on the current index
+    carouselContainer.style.transform = `translateX(${offset}%)`;
+}
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length; // Loop back to the first card
+    updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length; // Loop to the last card
+    updateCarousel();
+});
+</script>
+<footer>
+        <p>&copy; Cảm ơn đã đọc.</p>
+    </footer>
+</body>
+</html>

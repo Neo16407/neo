@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KỶ NIỆM NGÀY 26/3 - NGÀY THÀNH LẬP ĐOÀN TNCS HỒ CHÍ MINH</title>
+    <link rel="stylesheet" href="animate.css"/>
+</head>
+<style type="text/css">
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+     header {
+background-color: #e1f4f5;
+color: black;
+border-radius: 20px;
+display: flex;
+align-items: center; /* Căn giữa theo chiều dọc */
+padding: 10px 20px;
+}
+footer {
+background-color: #b7e7e4;
+color: white;
+text-align: center;
+padding: 10px;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'popping', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+   .sidebar {
+    height: 100%;
+    position: fixed;
+    right: -250px;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    padding: 15px;
+     width: 200px;
+     top: 0;
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-smooth:always;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+    right: 100px;
+
+
+}
+
+.toggle-btn {
+    background-color:#888787;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 70px;
+
+}
+.logo { 
+   width: 100;
+   }
+}
+@media (min-width: 900px) {
+    .sidebar {
+        right: 15; 
+    }
+
+    .main-content {
+        margin-right: 250px; 
+    }
+
+    .toggle-btn {
+        display: initial;
+
+    }
+}
+.h2 {color: blue;
+font-size: 30px}
+</style>
+<body>
+    <header>
+       <div id="sidebar" class="sidebar">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <br>
+        <br>
+        <br>
+        <h2>Mục lục</h2>
+        <hr>
+        <ul>
+            <li><a href="baotuong.html">Trang chủ</a></li>
+            <hr>
+            <li><a href="26-3.html">26/3 là ngày gì?</a></li>
+            <hr>
+            <li><a href="neo.html">Ảnh và video</a></li>
+            <hr>
+            <li><a href="bl.html">Bình luận</a></li>
+            <hr>
+            <li><a href="ds.html">Danh sách thành viên</a></li>
+            <hr>
+        </ul>
+    </div>
+    <div id="main-content" class="main-content">
+        <button id="toggle-btn" class="toggle-btn">☰</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script type="text/javascript">document.getElementById('toggle-btn').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    const isVisible = sidebar.style.right === '0px';
+
+    sidebar.style.right = isVisible ? '-250px' : '0px';
+});</script>
+<div class="logo">
+            <img src="https://i.pinimg.com/236x/fd/4b/09/fd4b0962d80451a0fa980fd3c6ffd433.jpg" alt="Logo của tôi" width="150">
+        </div>
+<h1 id="font-color">KỶ NIỆM NGÀY 26/3 - NGÀY THÀNH LẬP ĐOÀN TNCS HỒ CHÍ MINH </h1>
+<script>
+var colors = ["#864d82", "#864d4d", "#4d7e86", "#514d86", "#4d8657"];
+var currentColor = 0;
+setInterval(function() {
+document.getElementById("font-color").style.color = colors[currentColor];
+currentColor = (currentColor + 1) % colors.length;
+}, 1000);
+</script>
+</head> 
+</header>
+<section id="gratitude-form">
+            <h2 class="h2">Đưa ra ý kiến của bạn</h2>
+            <form id="form">
+                <textarea id="gratitude-message" placeholder="Bạn cảm thấy hài lòng không?" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+        <footer>
+        <p>&copy; Cảm ơn đã đọc.</p>
+    </footer>
+</body>
+</html>
